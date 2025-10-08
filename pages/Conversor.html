@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Convertidor de Divisas</title>
+    <link href="../bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="container p-4 bg-danger text-center rounded-3 shadow-lg">
+        <h1 class="text-white"> Convertidor de Divisas</h1>
+        <a href="../Proyecto.html" class="btn btn-danger btn-lg">Inicio</a>
+        <a href="../pages/Conversor.html" class="btn btn-danger btn-lg">Conversor</a>
+        <a href="../pages/Configuracion.html" class="btn btn-danger btn-lg">Configuracion</a>
+        <a href="../pages/Desarrolladores.html" class="btn btn-danger btn-lg">Desarrolladores</a>
+        <a href="../pages/Contacto.html" class="btn btn-danger btn-lg">Contacto</a>
+    </header>
+
+    <section class="container my-5 py-5 bg-white rounded-lg shadow-lg">
+        <div class="container my-5">
+
+            <h1 class="mb-4">Realizar Conversión</h1>
+            <div class="row mb-5">
+                
+                <div class="col-md-6 mb-3">
+                    <label for="amount" class="form-label">Cantidad a Convertir:</label>
+                    <input type="number" class="form-control" id="amount" placeholder="Ej: 100.50">
+                </div>
+                
+                <div class="col-md-6 mb-3">
+                    <label for="currency-from" class="form-label">Moneda Origen:</label>
+                    <select class="form-select" id="currency-from"></select>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="currency-to" class="form-label">Moneda Destino:</label>
+                    <select class="form-select" id="currency-to"></select>
+                </div>
+
+                <div class="col-md-6 d-flex align-items-end mb-3">
+                    <button type="button" class="btn btn-danger btn-lg w-100" id="convert">Convertir</button>
+                </div>
+                
+            </div>
+
+            <div class="mt-5 p-4 bg-light rounded border border-danger">
+                <h3 class="text-danger">Resultado:</h3>
+                <p id="result" class="fs-4 mb-0">Esperando la conversión...</p>
+            </div>
+            
+       <div class="d-flex justify-content-between align-items-center mb-3">
+    <h2 class="mb-0">Historial de Conversiones (Sesión Actual)</h2>
+    <button type="button" class="btn btn-sm btn-outline-danger" id="clear-history">
+        Borrar Historial
+    </button>
+</div>
+<div class="card p-3">
+    <table class="table mb-0">
+        <thead>
+            <tr>
+                <th scope="col">CANTIDAD ORIGEN</th>
+                <th scope="col">MONEDA ORIGEN</th>
+                <th scope="col">CANTIDAD DESTINO</th>
+                <th scope="col">MONEDA DESTINO</th>
+                <th scope="col">FECHA/HORA</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="5" class="text-center text-muted">No hay conversiones en el historial aún.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-black p-4 text-center rounded-b-lg shadow-lg mt-8">
+        <p>&copy; 2025 Proyecto LIC (Teoría) - Convertidor de Divisas. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../JS/app.js"></script> 
+    <script src="../JS/config.js"></script> 
+
+</body>
+</html>

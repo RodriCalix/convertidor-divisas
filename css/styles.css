@@ -1,0 +1,31 @@
+.contacto-bg{
+  background-color: rgba(255, 0, 0, 0.09)
+}
+
+.negrita  {
+  font-weight: bold;
+}
+
+.container-redondo{
+  border-radius: 15px; 
+  background-color: rgba(255, 0, 0, 0.09)
+}
+
+.redes{
+   max-width: 50px;
+}
+
+/* parte foto conversion */
+.conversor{
+  max-width: 200%;
+}
+
+
+/* Parte de la letra  */
+body {
+    font-family: 'PT Serif', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Anton', sans-serif;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Configuración</title>
+    <link href="../bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet"></head>
+
+<body>
+    <header class="container p-4 bg-danger text-center rounded-3 shadow-lg">
+        <h1 class="text-white"> Convertidor de Divisas</h1>
+        <a href="../Proyecto.html" class="btn btn-danger btn-lg">Inicio</a>
+        <a href="../pages/Conversor.html" class="btn btn-danger btn-lg">Conversor</a>
+        <a href="../pages/Configuracion.html" class="btn btn-danger btn-lg">Configuracion</a>
+        <a href="../pages/Desarrolladores.html" class="btn btn-danger btn-lg">Desarrolladores</a>
+        <a href="../pages/Contacto.html" class="btn btn-danger btn-lg">Contacto</a>
+    </header>
+
+  <section class="container my-5 py-5 bg-white rounded-lg shadow-lg">
+        <div class="container my-5">
+
+            <h1 class="mb-4 text-danger">Configuración de Opciones por Defecto</h1>
+            <p class="lead">Establece las monedas que aparecerán seleccionadas al iniciar el convertidor (Moneda Base y Destino).</p>
+
+            <div class="row mb-5 p-4 border rounded bg-light">
+                
+                <div class="col-md-6 mb-3">
+                    <label for="default-from" class="form-label">Moneda Base (Por Defecto):</label>
+                    <select class="form-select" id="default-from"></select>
+                </div>
+                
+                <div class="col-md-6 mb-3">
+                    <label for="default-to" class="form-label">Moneda Destino (Por Defecto):</label>
+                    <select class="form-select" id="default-to"></select>
+                </div>
+
+                <div class="col-12 d-flex align-items-end mt-3">
+                    <button type="button" class="btn btn-danger btn-lg w-100" id="save-defaults">Guardar Configuración</button>
+                </div>
+                
+                <div class="col-12 mt-3" id="config-message"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-black p-4 text-center rounded-b-lg shadow-lg mt-8">
+        <p>&copy; 2025 Proyecto LIC (Teoría) - Convertidor de Divisas. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../JS/app.js"></script> 
+    <script src="../JS/config.js"></script> 
+
+</body>
+</html>
